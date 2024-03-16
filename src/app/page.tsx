@@ -6,7 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Nothing
+          NextJs By Lee
         </p>
         <div>
           <a
