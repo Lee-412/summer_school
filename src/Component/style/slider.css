@@ -1,5 +1,44 @@
-.slideContent {
-    height: 200px;
-    background-color: gray;
+.container {
+    background-color: #156782;
     text-align: center;
+    margin-top: 0px !important;
+}
+
+
+h1 {
+    background-color: #156782;
+    text-align: center;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.slideContent {
+    height: fit-content;
+    background-color: #156782;
+    text-align: start;
+    padding-top: 0 !important;
+    padding-bottom: 30px !important;
+}
+
+.content {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+
+}
+
+.textInfor {
+    color: #156782;
+    font-weight: bold;
+}
+
+.name {
+    font-size: x-large;
 }

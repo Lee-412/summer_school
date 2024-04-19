@@ -12,9 +12,7 @@ const AboutAdvertise = () => {
     }
     return (
         <>
-            <div className="divContainer"
-
-            >
+            <div className="divContainer">
                 <div className="lefDiv">
                     <img src="https://csc.edu.vn/data/images/tin-tuc/data-science-machine-learning/tin-tuc/generative-ai/generative-ai-khtn.jpg" alt="" style={{
                         width: "90%",

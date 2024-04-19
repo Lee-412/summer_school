@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const MainAdvertise = () => {
     const router = useRouter()
     const handleClickRegister = () => {
-        router.push('/registerCoursesz  ');
+        router.push('/registerCourses');
     }
     return (
         <>
@@ -37,7 +37,7 @@ const MainAdvertise = () => {
                         marginTop: "100px",
                         marginBottom: "0px"
                     }}>
-                        <AcUnitIcon sx={{ color: "orange" }}></AcUnitIcon>
+                        <AcUnitIcon sx={{ color: '#ff9a23' }}></AcUnitIcon>
                         university of technology
                     </div>
                     <span style={{
@@ -68,13 +68,13 @@ const MainAdvertise = () => {
                     <Button
                         onClick={handleClickRegister}
                         sx={{
-                            backgroundColor: "orange",
+                            backgroundColor: '#ff9a23',
                             width: "90px",
                             marginTop: "20px",
                             marginBottom: "120px",
                             borderRadius: "10px",
                             ':hover': {
-                                backgroundColor: "orange",
+                                backgroundColor: '#ff9a23',
                                 color: "white",
                                 opacity: "0.7"
                             }
