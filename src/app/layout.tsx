@@ -1,13 +1,14 @@
+import ThemeRegistry from "@/theme-registry/theme.registry";
 
 
-import { Container } from '@mui/material';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
 
-        {children}
-
+        <ThemeRegistry>
+          {children}
+        </ThemeRegistry>
       </body>
     </html >
   )

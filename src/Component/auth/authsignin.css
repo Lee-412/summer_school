@@ -1,0 +1,23 @@
+.containerAuthSignin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+    height: "100vh"
+}
+
+.gridLayout {
+
+    box-shadow: rgba(100, 100, 111, 0.2);
+    border-radius: 0px 7px 29px 0px;
+    width: "30%";
+    border: 1px solid gray;
+
+}
+
+.iconButton {
+
+    background-color: "orange";
+    color: "white";
+    margin: "10px";
+}

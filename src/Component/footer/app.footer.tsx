@@ -1,12 +1,11 @@
 'use client'
 import Container from '@mui/material/Container';
-export default function AppHeader() {
+export default function AppFooter() {
 
     return (
         <Container>
             <div>
-                header layout
-
+                footer
             </div>
         </Container>
     )
