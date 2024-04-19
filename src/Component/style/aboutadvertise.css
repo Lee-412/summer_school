@@ -1,0 +1,45 @@
+.divContainer {
+    background-color: #F1F0E4 !important;
+    width: '100%';
+    max-height: '900px';
+    display: flex !important;
+    color: "black";
+    height: 500px;
+}
+
+.lefDiv {
+    width: "50%";
+    display: flex;
+    align-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 30px !important;
+    margin-right: 0px !important;
+}
+
+.rightDiv {
+    width: "50%";
+    height: "100%";
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: flex-start !important;
+    justify-content: center !important;
+    color: #156782 !important;
+    margin-left: 120px !important;
+    margin-top: 60px !important;
+}
+
+.buttonAbout {
+    background-color: orange !important;
+    width: fit-content !important;
+    padding: 10px !important;
+    height: fit-content;
+    margin-top: 20px !important;
+    margin-bottom: 120px !important;
+    border-radius: 10px !important;
+}
+
+.buttonAbout:hover {
+    color: white;
+    opacity: 0.7;
+}

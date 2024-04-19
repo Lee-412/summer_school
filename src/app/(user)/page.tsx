@@ -1,15 +1,19 @@
+import AboutAdvertise from "@/Component/advertise/aboutadvertise";
+import MainAdvertise from "@/Component/advertise/mainadvertise";
 import BasicSpeedDial from "@/Component/dial/speed.dial";
-import MainSlider from "@/Component/mainslider/page";
+import MainSlider from "@/Component/mainslider/mainslider";
 import { Container } from "@mui/material";
 
 export default function HomePage() {
 
 
     return (
-
-        <Container>
-            <h1>Home Page</h1>
-            <MainSlider />
-        </Container>
+        <>
+            <MainAdvertise />
+            <AboutAdvertise />
+            <Container>
+                <MainSlider />
+            </Container >
+        </>
     );
 }
