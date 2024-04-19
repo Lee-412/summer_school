@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Cài đặt các thư viện cần thiết: npm i
+Cài đặt các thư viện cần thiết: npm i.
 Chạy dự án với câu lệnh: npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
