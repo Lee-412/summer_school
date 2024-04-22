@@ -6,7 +6,7 @@ import Button from "@mui/material/Button/Button";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Slider, { Settings } from "react-slick";
-import "../style/slider.css"
+import "./slider.css"
 import { Container } from "@mui/material";
 import TeacherCard from "../teacher/teacher.component";
 
@@ -61,8 +61,6 @@ const MainSlider = () => {
 
     return (
         <>
-
-
             <h1>
                 <span>Meet </span>
                 <span>Our </span>
@@ -75,12 +73,15 @@ const MainSlider = () => {
                 <div className="slideContent">
                     <Container>
                         <div className="content" >
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYIASQZfume3eavWfsVYoHqVUrk1tbNw9mL4KLXGW8g&s" alt=""
+                            <img src="https://geekflare.com/cdn-cgi/image/width=800,height=420,fit=crop,quality=90,gravity=auto,sharpen=1,metadata=none,format=auto,onerror=redirect/wp-content/uploads/2023/06/AI-avatar.jpg" alt=""
                                 style={{
                                     objectFit: 'cover',
-                                    borderRadius: "50px",
-                                    marginLeft: "0px",
-                                    marginRight: "0px",
+                                    width: "70%",
+                                    height: "15em",
+                                    borderRadius: "30px",
+                                    marginLeft: "20px",
+                                    marginRight: "20px",
+                                    marginTop: "30px",
                                     backgroundColor: "red"
                                 }}
                             />
@@ -99,8 +100,13 @@ const MainSlider = () => {
                                 style={{
 
                                     objectFit: 'cover',
-                                    borderRadius: "50px",
-                                    marginLeft: "20px"
+                                    width: "70%",
+                                    height: "15em",
+                                    borderRadius: "30px",
+                                    marginLeft: "20px",
+                                    marginRight: "20px",
+                                    marginTop: "30px",
+                                    backgroundColor: "red"
                                 }}
                             />
                             <p>Nhà khoa học</p>
@@ -113,12 +119,39 @@ const MainSlider = () => {
                 <div className="slideContent">
                     <Container>
                         <div className="content">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYIASQZfume3eavWfsVYoHqVUrk1tbNw9mL4KLXGW8g&s" alt=""
+                            <img src="https://geekflare.com/cdn-cgi/image/width=800,height=420,fit=crop,quality=90,gravity=auto,sharpen=1,metadata=none,format=auto,onerror=redirect/wp-content/uploads/2023/06/AI-avatar.jpg" alt=""
                                 style={{
 
                                     objectFit: 'cover',
-                                    borderRadius: "50px",
-                                    marginLeft: "20px"
+                                    width: "70%",
+                                    height: "15em",
+                                    borderRadius: "30px",
+                                    marginLeft: "20px",
+                                    marginRight: "20px",
+                                    marginTop: "30px",
+                                    backgroundColor: "red"
+                                }}
+                            />
+                            <p>Nhà khoa học</p>
+                            <p>Công việc</p>
+                            <p>Thông tin dài </p>
+                        </div>
+
+                    </Container>
+                </div>
+                <div className="slideContent">
+                    <Container>
+                        <div className="content" >
+                            <img src="https://1.bp.blogspot.com/-sH-kqKo3Lv8/YC9PLp6lZgI/AAAAAAAA8Jo/pZ2GBe4s534G8ErpZaDsEesCexd4270RACLcBGAsYHQ/s0/Avatar-buon-Anime%2B%25283%2529.jpg" alt=""
+                                style={{
+                                    objectFit: 'cover',
+                                    width: "70%",
+                                    height: "15em",
+                                    borderRadius: "30px",
+                                    marginLeft: "20px",
+                                    marginRight: "20px",
+                                    marginTop: "30px",
+                                    backgroundColor: "red"
                                 }}
                             />
                             <p>Nhà khoa học</p>
@@ -135,8 +168,13 @@ const MainSlider = () => {
                                 style={{
 
                                     objectFit: 'cover',
-                                    borderRadius: "50px",
-                                    marginLeft: "20px"
+                                    width: "70%",
+                                    height: "15em",
+                                    borderRadius: "30px",
+                                    marginLeft: "20px",
+                                    marginRight: "20px",
+                                    marginTop: "30px",
+                                    backgroundColor: "red"
                                 }}
                             />
                             <p>Nhà khoa học</p>
@@ -151,28 +189,14 @@ const MainSlider = () => {
                         <div className="content" >
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYIASQZfume3eavWfsVYoHqVUrk1tbNw9mL4KLXGW8g&s" alt=""
                                 style={{
-
                                     objectFit: 'cover',
-                                    borderRadius: "50px",
-                                    marginLeft: "20px"
-                                }}
-                            />
-                            <p>Nhà khoa học</p>
-                            <p>Công việc</p>
-                            <p>Thông tin dài </p>
-                        </div>
-
-                    </Container>
-                </div>
-                <div className="slideContent">
-                    <Container>
-                        <div className="content" >
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYIASQZfume3eavWfsVYoHqVUrk1tbNw9mL4KLXGW8g&s" alt=""
-                                style={{
-
-                                    objectFit: 'cover',
-                                    borderRadius: "50px",
-                                    marginLeft: "20px"
+                                    width: "70%",
+                                    height: "15em",
+                                    borderRadius: "30px",
+                                    marginLeft: "20px",
+                                    marginRight: "20px",
+                                    marginTop: "30px",
+                                    backgroundColor: "red"
                                 }}
                             />
                             <p>Nhà khoa học</p>

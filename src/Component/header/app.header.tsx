@@ -118,7 +118,7 @@ export default function AppHeader() {
                             backgroundColor: "white"
                         },
 
-                    }}>Contact</Button>
+                    }}>Student</Button>
                     <Button
                         onClick={handleClickProfile}
                         sx={{

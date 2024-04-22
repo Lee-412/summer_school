@@ -38,7 +38,7 @@ const MainAdvertise = () => {
                         marginBottom: "0px"
                     }}>
                         <AcUnitIcon sx={{ color: '#ff9a23' }}></AcUnitIcon>
-                        university of technology
+                        University Of Technology
                     </div>
                     <span style={{
                         fontWeight: "bold",

@@ -1,0 +1,34 @@
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.lefDivFooter {
+    display: flex;
+    flex-direction: column;
+    color: "#13072e";
+    width: 50%;
+
+}
+
+.rightDivFooter {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+}
+
+.titleList {
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.footerCopyright {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}

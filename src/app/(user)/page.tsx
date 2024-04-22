@@ -1,3 +1,4 @@
+import ScrollToTop from "@/Component/Scroll/scroll.to.top";
 import AboutAdvertise from "@/Component/advertise/aboutadvertise";
 import MainAdvertise from "@/Component/advertise/mainadvertise";
 import BasicSpeedDial from "@/Component/dial/speed.dial";
@@ -10,9 +11,11 @@ export default function HomePage() {
 
     return (
         <>
+
             <MainAdvertise />
             <AboutAdvertise />
             <MainSlider />
+            <ScrollToTop />
         </>
     );
 }

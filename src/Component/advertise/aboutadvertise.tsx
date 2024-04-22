@@ -3,7 +3,7 @@
 import { Button } from "@mui/material";
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import { useRouter } from "next/navigation";
-import '../style/aboutadvertise.css'
+import './aboutadvertise.css'
 const AboutAdvertise = () => {
 
     const router = useRouter()
