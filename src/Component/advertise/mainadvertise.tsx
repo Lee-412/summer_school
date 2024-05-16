@@ -3,10 +3,16 @@
 import { Button } from "@mui/material";
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import { useRouter } from "next/navigation";
+import RegisterModal from "../modalRegister/register";
+import { useState } from "react";
 const MainAdvertise = () => {
     const router = useRouter()
+
+    const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+
     const handleClickRegister = () => {
-        router.push('/registerCourses');
+        // router.push('/registerCourses');
+        setIsRegisterModalOpen(true);
     }
     return (
         <>
@@ -101,6 +107,13 @@ const MainAdvertise = () => {
                 </div>
 
             </div >
+            <RegisterModal
+                // access_token={access_token}
+                // getData={getData}
+                isRegisterModalOpen={isRegisterModalOpen}
+                setIsRegisterModalOpen={setIsRegisterModalOpen}
+            />
+
         </>
     )
 }

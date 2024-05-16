@@ -21,7 +21,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useRouter } from 'next/navigation';
 import './authsignin.css';
 
-export default function SingInForm() {
+export default function SingInTeacherForm() {
 
     const [password, setPassword] = React.useState("");
     const [username, setUsername] = React.useState("");
@@ -151,7 +151,7 @@ export default function SingInForm() {
                                 margin="normal"
                                 required
                                 fullWidth
-                                label="Username"
+                                label="Tên đăng nhập"
                                 name="username"
                                 autoFocus
                                 error={isErrorUsername}
@@ -170,7 +170,7 @@ export default function SingInForm() {
                                 required
                                 fullWidth
                                 name="password"
-                                label="Password"
+                                label="Mật khẩu"
                                 type={showPassword ? "text" : "password"}
                                 error={isErrorPassword}
                                 helperText={errorPassword}
@@ -186,6 +186,22 @@ export default function SingInForm() {
                                         </IconButton>
                                     </InputAdornment>,
                                 }}
+                            />
+                            <TextField
+                                onChange={(event) => {
+                                    setIsErrorUsername(false);
+                                    setErrorUsername("")
+                                    setUsername(event.target.value)
+                                }}
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                label="Mã giáo viên"
+                                name="teachercode"
+                                autoFocus
+                                error={isErrorUsername}
+                                helperText={errorUsername}
                             />
                             <Button
                                 sx={{
