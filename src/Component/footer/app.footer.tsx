@@ -2,11 +2,11 @@
 import { Box, Button, Divider, IconButton, InputAdornment, List, ListItem, ListItemText, TextField, styled } from '@mui/material';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import React, { useState } from 'react';
-import SendIcon from '@mui/icons-material/Send';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import './appFooter.css'
-import { AccountCircle } from '@mui/icons-material';
+
 export default function AppFooter() {
+
     function generate(element: React.ReactElement) {
         return [0, 1, 2].map((value) =>
             React.cloneElement(element, {
@@ -31,7 +31,7 @@ export default function AppFooter() {
                 backgroundColor: 'White',
                 padding: '1rem',
                 textAlign: 'center',
-                marginTop: '10px'
+                marginTop: '10px',
             }}
         >
             <div className='containerFooter'>
@@ -127,7 +127,7 @@ export default function AppFooter() {
             <Divider></Divider>
             <div
                 className='footerCopyright'>
-                <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © 2022 - All right reserved by Lee Duc and Hien Le</p>
                 <p>Team & Conditions</p>
             </div>
         </Box>
