@@ -6,7 +6,6 @@ import Modal from '@mui/material/Modal';
 import { Container, FormControl, Grid, IconButton, InputAdornment, InputLabel, MenuItem, Select, Stack, TextField } from '@mui/material';
 
 
-import dayjs, { Dayjs } from 'dayjs';
 import { useState } from 'react';
 
 interface dataProps_RegisterModal {

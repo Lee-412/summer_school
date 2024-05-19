@@ -1,10 +1,13 @@
 'use client'
 
+import {getCourseData, Icourse} from "@/utils/courses";
 import { Avatar, Box, Button, Container, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
+import { log } from "console";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const listData = [
+
+let listData = [
     {
         id: 1,
         title: 'bai bao 1',
@@ -45,15 +48,19 @@ const listData = [
 ]
 
 
-const ArticleAdvertise = () => {
+const ArticleAdvertise = async() => {
 
     const router = useRouter()
     const handleClickRegister = () => {
         router.push('/registerCourses');
     }
-    const handleOnclick = () => {
-        alert("khong co gi")
+    const handleOnclick = async () => {
+        alert("khong co gi")  
     }
+    // listData = await getCourseData()
+    // const courseData = listData.data
+    let course = await getCourseData()
+    const courseData: Array<Icourse> = course.data; // lấy data như này nhá
     return (
         <Box sx={{
             display: "flex",
@@ -88,7 +95,7 @@ const ArticleAdvertise = () => {
 
             }} >
                 {
-                    listData.map(data => {
+                    courseData.map(data => {
                         return (
                             <>
                                 <Box
@@ -114,7 +121,7 @@ const ArticleAdvertise = () => {
                                         justifyContent: "center",
 
                                     }}   >
-                                        {data.user}
+                                        {data.attributes.name}
                                     </Typography>
                                     <Typography variant="h6" sx={{
                                         ml: "3%",
@@ -123,7 +130,7 @@ const ArticleAdvertise = () => {
                                         color: "#156782"
 
                                     }}>
-                                        {data.title}
+                                        {data.attributes.Description[0].children[0].text}
                                     </Typography> <br />
 
                                 </Box>
