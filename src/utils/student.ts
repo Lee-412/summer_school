@@ -11,7 +11,7 @@ export async function postStudentData(data: object) {
         cache: "no-cache",
         credentials: "same-origin",
         headers: {
-            "Content-Type":"application/json"
+            "Content-Type": "application/json"
 
         },
         redirect: "folow",
@@ -20,15 +20,15 @@ export async function postStudentData(data: object) {
     }
     const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses`, option)
     return response.json()
- }
- export async function patchStudentData(data: object) {
+}
+export async function patchStudentData(data: object) {
     const option = {
         method: "PATCH",
         mode: "cor",
         cache: "no-cache",
         credentials: "same-origin",
         headers: {
-            "Content-Type":"application/json"
+            "Content-Type": "application/json"
 
         },
         redirect: "folow",
@@ -37,4 +37,4 @@ export async function postStudentData(data: object) {
     }
     const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses`, option)
     return response.json()
- }
+}

@@ -1,6 +1,6 @@
 'use client'
 
-import {getCourseData, Icourse} from "@/utils/courses";
+import { getCourseData, Icourse } from "@/utils/courses";
 import { Avatar, Box, Button, Container, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
 import { log } from "console";
 import { useRouter } from "next/navigation";
@@ -48,17 +48,17 @@ let listData = [
 ]
 
 
-const ArticleAdvertise = async() => {
+const ArticleAdvertise = async () => {
 
     const router = useRouter()
     const handleClickRegister = () => {
         router.push('/registerCourses');
     }
     const handleOnclick = async () => {
-        alert("khong co gi")  
+        alert("khong co gi")
     }
     // listData = await getCourseData()
-    // const courseData = listData.data
+    // const courseData = listData;
     let course = await getCourseData()
     const courseData: Array<Icourse> = course.data; // lấy data như này nhá
     return (
@@ -122,6 +122,7 @@ const ArticleAdvertise = async() => {
 
                                     }}   >
                                         {data.attributes.name}
+                                        {/* {data.user} */}
                                     </Typography>
                                     <Typography variant="h6" sx={{
                                         ml: "3%",
@@ -131,6 +132,7 @@ const ArticleAdvertise = async() => {
 
                                     }}>
                                         {data.attributes.Description[0].children[0].text}
+                                        {/* {data.title} */}
                                     </Typography> <br />
 
                                 </Box>

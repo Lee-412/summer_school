@@ -11,7 +11,7 @@ export async function postArticleData(data: object) {
         cache: "no-cache",
         credentials: "same-origin",
         headers: {
-            "Content-Type":"application/json"
+            "Content-Type": "application/json"
 
         },
         redirect: "folow",
@@ -20,4 +20,4 @@ export async function postArticleData(data: object) {
     }
     const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses`, option)
     return response.json()
- }
+}
