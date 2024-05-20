@@ -18,6 +18,6 @@ export async function postArticleData(data: object) {
         referrerPolicy: "no-referrer",
         body: JSON.stringify(data)
     }
-    const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses`, option)
+    const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/news`, option)
     return response.json()
  }

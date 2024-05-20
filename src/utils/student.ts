@@ -18,7 +18,7 @@ export async function postStudentData(data: object) {
         referrerPolicy: "no-referrer",
         body: JSON.stringify(data)
     }
-    const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses`, option)
+    const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/students`, option)
     return response.json()
  }
  export async function patchStudentData(data: object) {
@@ -35,6 +35,6 @@ export async function postStudentData(data: object) {
         referrerPolicy: "no-referrer",
         body: JSON.stringify(data)
     }
-    const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses`, option)
+    const response = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/students`, option)
     return response.json()
  }

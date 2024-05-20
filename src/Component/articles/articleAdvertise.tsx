@@ -48,8 +48,11 @@ let listData = [
 ]
 
 
-const ArticleAdvertise = async() => {
 
+const ArticleAdvertise = (props: Array<Icourse>) => {
+
+    console.log(props);
+    
     const router = useRouter()
     const handleClickRegister = () => {
         router.push('/registerCourses');
@@ -59,8 +62,7 @@ const ArticleAdvertise = async() => {
     }
     // listData = await getCourseData()
     // const courseData = listData.data
-    let course = await getCourseData()
-    const courseData: Array<Icourse> = course.data; // lấy data như này nhá
+    // lấy data như này nhá
     return (
         <Box sx={{
             display: "flex",
@@ -95,11 +97,11 @@ const ArticleAdvertise = async() => {
 
             }} >
                 {
-                    courseData.map(data => {
+                    props.map(prop => {
                         return (
                             <>
                                 <Box
-                                    key={data.id}
+                                    key={prop.id}
                                     sx={{
                                         display: "flex",
                                         flexDirection: "row",
@@ -121,7 +123,7 @@ const ArticleAdvertise = async() => {
                                         justifyContent: "center",
 
                                     }}   >
-                                        {data.attributes.name}
+                                        {prop.attributes.name}
                                     </Typography>
                                     <Typography variant="h6" sx={{
                                         ml: "3%",
@@ -130,7 +132,7 @@ const ArticleAdvertise = async() => {
                                         color: "#156782"
 
                                     }}>
-                                        {data.attributes.Description[0].children[0].text}
+                                        {prop.attributes.Description[0].children[0].text}
                                     </Typography> <br />
 
                                 </Box>
